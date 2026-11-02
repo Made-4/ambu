@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="ivoryBg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F7F4EE" />
+      <stop offset="100%" stop-color="#EDE7DC" />
+    </radialGradient>
+
+    <linearGradient id="goldMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="35%" stop-color="#AA7C11" />
+      <stop offset="70%" stop-color="#E5C158" />
+      <stop offset="100%" stop-color="#9C6B08" />
+    </linearGradient>
+
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C27D68" />
+      <stop offset="50%" stop-color="#E8A598" />
+      <stop offset="100%" stop-color="#A25B48" />
+    </linearGradient>
+
+    <filter id="paperShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#554433" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="120" fill="url(#ivoryBg)" />
+
+  <!-- Arch / Crest Silhouette (Classic Editorial Romance) -->
+  <path d="M 120 410 V 210 A 136 136 0 0 1 392 210 V 410 Z" fill="none" stroke="url(#roseGold)" stroke-width="2.5" opacity="0.6" stroke-dasharray="8 6"/>
+  <circle cx="256" cy="256" r="226" fill="none" stroke="#221C18" stroke-width="1.2" opacity="0.15"/>
+
+  <!-- Central Monogram -->
+  <g filter="url(#paperShadow)" transform="translate(0, -6)">
+    <!-- Elegant Serif-inspired m4 -->
+    <g stroke="#1F1A17" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- Letter m: clean refined curves -->
+      <path d="M 136 295 V 235 C 136 200 166 200 184 230 C 202 200 232 200 232 235 V 295" stroke-width="18"/>
+      <!-- Serifs for luxury feel -->
+      <path d="M 124 295 H 148 M 220 295 H 244" stroke-width="14"/>
+
+      <!-- Number 4: Architectural sharp contrast -->
+      <path d="M 334 195 L 272 278 H 376" stroke-width="18"/>
+      <path d="M 334 195 V 295" stroke-width="18"/>
+      <!-- Serif base for 4 -->
+      <path d="M 322 295 H 346" stroke-width="14"/>
+    </g>
+
+    <!-- Golden Milestone Starburst -->
+    <g transform="translate(376, 175)">
+      <path d="M 0 -22 Q 0 0 22 0 Q 0 0 0 22 Q 0 0 -22 0 Q 0 0 0 -22 Z" fill="url(#goldMetallic)" />
+    </g>
+
+    <!-- Warm Rose Heart at center joint -->
+    <g transform="translate(254, 252) scale(0.9)">
+      <path d="M 0 6 C 0 3 -3 0 -6 0 C -10 0 -12 3 -12 3 C -12 3 -14 0 -18 0 C -21 0 -24 3 -24 6 C -24 13 -12 21 -12 21 C -12 21 0 13 0 6 Z" fill="url(#roseGold)" transform="translate(12, -8)"/>
+    </g>
+  </g>
+
+  <!-- Editorial Brand Typography -->
+  <g transform="translate(256, 362)">
+    <text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-style="italic" fill="url(#roseGold)">made</text>
+    <text x="0" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="6" fill="#1F1A17">FOUR</text>
+  </g>
+</svg>
